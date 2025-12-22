@@ -60,3 +60,45 @@ I didn't consider the process finished until I ran verification queries to prove
 * Confirmed **0** rides longer than 24 hours.
 * Confirmed **0** "charging" stations remain.
 * Final cleaned dataset consists of **5,405,267 rows**, retaining approximately 97% of the original data.
+
+## 4. Analyze
+
+### Tools Used
+* **SQL (PostgreSQL):** Utilized for deep-dive analysis, window functions, and behavioral profiling across the 5.4 million row cleaned dataset.
+
+### Analysis Strategy: Behavioral Profiling
+To provide Lily Moreno with a conversion-focused strategy, I moved beyond basic counts. I looked at the **"When, How Long, and Where"** of rider behavior to build distinct personas for Members vs. Casual riders. My goal was to prove the **"Tourist vs. Commuter"** theory using data.
+
+
+### Key Insights
+
+#### 1. When
+* While Members account for 2 out of every 3 rides in the system, Casual riders show a much higher reliance on weekends. 
+* **37%** of all Casual trips happen on weekends, compared to only **24%** for Members.
+* While the total number of rides is roughly equal on weekends and weekdays (~770k/day), the "market share" of Casual riders spikes significantly on Saturdays and Sundays.
+* Member rides peak during morning and evening rush hours (5 AM–10 AM and 3 PM–8 PM). Casual rides peak in the evening.
+
+
+#### 2. How Long
+* **Average Trip Length:** Casual riders stay on bikes **65% longer** than Members on average (~20 minutes vs. ~12 minutes).
+* **The Purpose:** Members treat Cyclistic as a utility (short, efficient bursts), while Casuals treat it as an experience (long, leisurely durations).
+
+
+#### 3. Seasonal Preferences
+* **Summer Peak:** Nearly half (**48%**) of all Casual rides for the entire year occur in the Summer months (June–August). 
+* **Winter Resilience:** Members take **~10%** of their total annual trips in the winter, whereas Casual ridership drops to only **4.5%**. This reinforces the theory that Members use the bikes for essential transit while Casuals ride primarily for recreation.
+  
+
+#### 4. Where
+The station data provided the strongest evidence of the "Tourist Profile":
+* **Casual Top Stations:** Dominated by landmarks like **Navy Pier**, **Millennium Park**, and **Shedd Aquarium**.
+* **Member Top Stations:** Clustered around corporate areas and major transit hubs like **Clinton St & Washington Blvd** (near Union Station).
+* **Round Trips:** Casual riders took **twice as many round trips** as Members (107k vs 52k), proving a preference for sightseeing loops rather than point-to-point transit.
+
+
+### Strategic Recommendations
+Based on the data, I identified three primary opportunities for conversion:
+
+* **The Weekend Membership:** Even though weekends only account for 28% of the week, they represent 37% of all Casual trips. This high intensity of weekend usage suggests a "Weekend-Only" membership would be a highly effective membership plan for riders who don't need the service for a Monday - Friday commute.
+* **Summer/Seasonal Promotions:** With 48% of Casual activity in the summer, launching a Summer membership in May could lock in Casual users before their peak usage season begins.
+* **Leisure Incentives:** Since Casual riders stay out 65% longer, a membership that offers longer "included" ride times (e.g., 45 minutes instead of 30) would specifically appeal to the longer-duration behavior of the Casual group.
