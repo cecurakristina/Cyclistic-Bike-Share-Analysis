@@ -102,3 +102,30 @@ Based on the data, I identified three primary opportunities for conversion:
 * **The Weekend Membership:** Even though weekends only account for 28% of the week, they represent 37% of all Casual trips. This high intensity of weekend usage suggests a "Weekend-Only" membership would be a highly effective membership plan for riders who don't need the service for a Monday - Friday commute.
 * **Summer/Seasonal Promotions:** With 48% of Casual activity in the summer, launching a Summer membership in May could lock in Casual users before their peak usage season begins.
 * **Leisure Incentives:** Since Casual riders stay out 65% longer, a membership that offers longer "included" ride times (e.g., 45 minutes instead of 30) would specifically appeal to the longer-duration behavior of the Casual group.
+
+
+## 5. Share
+
+### Tools Used
+**Tableau Public** 
+
+### Data Storytelling & Visualizations
+I designed the visuals to lead the executive team through the behavior gap I discovered in the Analyze phase.
+
+* **The Volume Split (Donut Chart):** I visualized the total ridership to show that while Members provide the 65% "foundation," the 35% Casual riders (1.9M+ rides) is a massive, untapped revenue pool.
+* **The "Commuter Curve" (Line Chart):** I plotted hourly ride volume which revealed a sharp "M-shape" for members (8 AM and 5 PM peaks) vs. a smooth "Afternoon Hill" for casuals. This visually proves that members use bikes for utility, while casuals use them for leisure. 
+* **The Efficiency Gap (Bar Chart):** By comparing average trip duration, I demonstrated that Casual riders stay on the bikes nearly twice as long as Members. This visual serves to justify why a "commute-focused" membership might not currently appeal to them.
+* **The Seasonal Heatmap (Area Chart):** I highlighted the "Summer Peak" for casual riders.
+* **Geographic Hot Zones (Map):** I mapped the top stations by user type. The visual clustering of Casual riders along the Lakefront (Navy Pier, Millennium Park) vs. Members in the Loop provides a literal roadmap for physical advertisement placement. 
+
+## 6. Act
+
+### Conclusion & Executive Summary
+The analysis concludes that Casual riders are not just "unregistered members", they are a different persona entirely. They are **"Weekend Warriors"** and **"Seasonal Sightseers."** To convert them, Cyclistic must pivot its value proposition from "Efficient Commuting" to "Unlimited Exploration."
+
+### Final Recommendations
+Based on the behavioral insights, I recommend the following strategies to Lily Moreno:
+
+1.  **Introduce a "Seasonal Summer Pass":** Launch a 3-month membership specifically for the May–August window to cater to the casual riders who only use the service in the summer, eventually funneling them into full annual renewals.
+2.  **Targeted Digital & Physical Marketing at "Leisure Hubs":** Instead of city-wide advertising, concentrate the marketing budget on the top 10 Lakefront stations identified in the geographic analysis. Promote membership benefits exactly where casual riders start their trips.
+3.  **Tiered Membership Benefits for Long-Duration Rides:** Adjust membership tiers to include longer ride windows (e.g., 45 or 60 minutes). Since Casual riders average 20+ minute trips, showing them that a membership makes their long, leisurely rides more affordable is a direct path to conversion.
