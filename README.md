@@ -60,6 +60,9 @@ I didn't consider the process finished until I ran verification queries to prove
 * Confirmed **0** rides longer than 24 hours.
 * Confirmed **0** "charging" stations remain.
 * Final cleaned dataset consists of **5,405,267 rows**, retaining approximately 97% of the original data.
+<p align="center"> <img src="viz/fig1_dataset_clean_raw.png" width="600">
+   
+<em><strong>Figure 1: Data Retention Summary</strong> - Visualizing the results of the SQL cleaning phase. </em> </p>
 
 ## 4. Analyze
 
@@ -73,28 +76,49 @@ To provide Lily Moreno with a conversion-focused strategy, I moved beyond basic 
 ### Key Insights
 
 #### 1. When
-* While Members account for 2 out of every 3 rides in the system, Casual riders show a much higher reliance on weekends. 
+<p align="center"> 
+  <img src="viz/fig2_overall_ridership_donut.png" width="400">
+</p>
+<em><strong>Figure 2: Ridership Composition</strong> - Members provide the 65% "foundation" of the service, while the 35% Casual segment represents the primary target for conversion.</em> </p>
+
+* While Members account for 2 out of every 3 rides in the system, Casual riders show a much higher reliance on weekends.
 * **37%** of all Casual trips happen on weekends, compared to only **24%** for Members.
 * While the total number of rides is roughly equal on weekends and weekdays (~770k/day), the "market share" of Casual riders spikes significantly on Saturdays and Sundays.
-* Member rides peak during morning and evening rush hours (5 AM–10 AM and 3 PM–8 PM). Casual rides peak in the evening.
+* Member rides peak during morning and evening rush hours (5AM - 10AM and 3PM - 8PM). Casual rides peak in the evening.
 
+<p align="center"> <img src="viz/fig3_hourly_usage_patterns.png" width="800">
+
+<em><strong>Figure 3: Hourly Ridership</strong> - The "M-shaped" peaks at 8AM and 5PM for members contrast with the steady afternoon growth of casual riders.</em> </p>
 
 #### 2. How Long
 * **Average Trip Length:** Casual riders stay on bikes **65% longer** than Members on average (~20 minutes vs. ~12 minutes).
 * **The Purpose:** Members treat Cyclistic as a utility (short, efficient bursts), while Casuals treat it as an experience (long, leisurely durations).
+<p align="center"> <img src="viz/fig4_average_trip_duration.png" width="400">
 
+<em><strong>Figure 4: Average Duration</strong> - Casual riders average 20 minutes per trip, significantly longer than the 12-minute member average.</em> </p>
 
 #### 3. Seasonal Preferences
 * **Summer Peak:** Nearly half (**48%**) of all Casual rides for the entire year occur in the Summer months (June–August). 
 * **Winter Resilience:** Members take **~10%** of their total annual trips in the winter, whereas Casual ridership drops to only **4.5%**. This reinforces the theory that Members use the bikes for essential transit while Casuals ride primarily for recreation.
-  
+<p align="center"> <img src="viz/fig5_monthly_seasonality_trends.png" width="800">
+
+<em><strong>Figure 5: Seasonal Volume</strong> - The stacked area chart highlights the massive "Summer Surge" among casual riders compared to the more stable year-round floor of members.</em> </p>
 
 #### 4. Where
 The station data provided the strongest evidence of the "Tourist Profile":
 * **Casual Top Stations:** Dominated by landmarks like **Navy Pier**, **Millennium Park**, and **Shedd Aquarium**.
-* **Member Top Stations:** Clustered around corporate areas and major transit hubs like **Clinton St & Washington Blvd** (near Union Station).
-* **Round Trips:** Casual riders took **twice as many round trips** as Members (107k vs 52k), proving a preference for sightseeing loops rather than point-to-point transit.
 
+<p align="center"> <img src="viz/fig7_geographic_casual_hotspots.png" width="500">
+
+<em><strong>Figure 6: Casual Station Hotspots</strong> - Mapping ridership by volume shows a clear concentration of casual activity along the Chicago Lakefront.</em> </p>
+
+* **Member Top Stations:** Clustered around corporate areas and major transit hubs like **Clinton St & Washington Blvd** (near Union Station).
+
+<p align="center"> <img src="viz/fig6_geographic_member_hotspots.png" width="500">
+
+<em><strong>Figure 7: Member Station Hotspots</strong> - In contrast to casuals, members are distributed more evenly throughout residential and commercial districts.</em> </p>
+
+* **Round Trips:** Casual riders took **twice as many round trips** as Members (107k vs 52k), proving a preference for sightseeing loops rather than point-to-point transit.
 
 ### Strategic Recommendations
 Based on the data, I identified three primary opportunities for conversion:
@@ -113,7 +137,7 @@ Based on the data, I identified three primary opportunities for conversion:
 I designed the visuals to lead the executive team through the behavior gap I discovered in the Analyze phase.
 
 * **The Volume Split (Donut Chart):** I visualized the total ridership to show that while Members provide the 65% "foundation," the 35% Casual riders (1.9M+ rides) is a massive, untapped revenue pool.
-* **The "Commuter Curve" (Line Chart):** I plotted hourly ride volume which revealed a sharp "M-shape" for members (8 AM and 5 PM peaks) vs. a smooth "Afternoon Hill" for casuals. This visually proves that members use bikes for utility, while casuals use them for leisure. 
+* **The "Commuter Curve" (Line Chart):** I plotted hourly ride volume which revealed a sharp "M-shape" for members (8AM and 5PM peaks) vs. a smooth "Afternoon Hill" for casuals. This visually proves that members use bikes for utility, while casuals use them for leisure. 
 * **The Efficiency Gap (Bar Chart):** By comparing average trip duration, I demonstrated that Casual riders stay on the bikes nearly twice as long as Members. This visual serves to justify why a "commute-focused" membership might not currently appeal to them.
 * **The Seasonal Heatmap (Area Chart):** I highlighted the "Summer Peak" for casual riders.
 * **Geographic Hot Zones (Map):** I mapped the top stations by user type. The visual clustering of Casual riders along the Lakefront (Navy Pier, Millennium Park) vs. Members in the Loop provides a literal roadmap for physical advertisement placement. 
