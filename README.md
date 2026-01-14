@@ -142,6 +142,10 @@ I designed the visuals to lead the executive team through the behavior gap I dis
 * **The Seasonal Heatmap (Area Chart):** I highlighted the "Summer Peak" for casual riders.
 * **Geographic Hot Zones (Map):** I mapped the top stations by user type. The visual clustering of Casual riders along the Lakefront (Navy Pier, Millennium Park) vs. Members in the Loop provides a literal roadmap for physical advertisement placement. 
 
+### **Interactive Dashboard**
+The full analysis was published to Tableau Public. You can interact with the filters and tooltips to see granular ride counts and geographic data points:
+* [**View Live Cyclistic Analytics Dashboard**](https://public.tableau.com/app/profile/kristina.cecura/viz/CyclisticBike-ShareConsumerBehaviorAnalysis/Dashboard1)
+
 ## 6. Act
 
 ### Conclusion & Executive Summary
@@ -153,3 +157,7 @@ Based on the behavioral insights, I recommend the following strategies to Lily M
 1.  **Introduce a "Seasonal Summer Pass":** Launch a 3-month membership specifically for the May–August window to cater to the casual riders who only use the service in the summer, eventually funneling them into full annual renewals.
 2.  **Targeted Digital & Physical Marketing at "Leisure Hubs":** Instead of city-wide advertising, concentrate the marketing budget on the top 10 Lakefront stations identified in the geographic analysis. Promote membership benefits exactly where casual riders start their trips.
 3.  **Tiered Membership Benefits for Long-Duration Rides:** Adjust membership tiers to include longer ride windows (e.g., 45 or 60 minutes). Since Casual riders average 20+ minute trips, showing them that a membership makes their long, leisurely rides more affordable is a direct path to conversion.
+
+### **Executive Presentation**
+For a high-level summary of the business recommendations and growth strategy, please refer to the PDF presentation:
+* [**View Growth Strategy (PDF)**](presentation/Cyclistic_Growth_Strategy.pdf)
