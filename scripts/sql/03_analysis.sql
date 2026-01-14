@@ -116,7 +116,7 @@ GROUP BY
 -- MEMBER: weekday 75%, weekend 24%
 -- We can see that compared to members (24%), weekend rides account more (37%) to the casual riders for the total amount of rides per group.
 -- This shows that our casual riders are more likely to ride on weekends, so we can consider weekend memberships as a marketing strategy recommendation.
--- When looking at the total number of rides accross the rider type, the percentage of weekend rides accounts to nearly as many casual riders (13%) as it does to members(15%).
+-- When looking at the total number of rides across the rider type, the percentage of weekend rides accounts to nearly as many casual riders (13%) as it does to members(15%).
 
 SELECT 
 	day_type,
